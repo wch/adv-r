@@ -116,7 +116,7 @@ new_stack <- function(items = list()) {
 length.stack <- function(x) length(x$items)
 
 push <- function(x, y) {
-  x$items[length(x) + 1] <- y
+  x$items[[length(x) + 1]] <- y
   x
 }
 ```
